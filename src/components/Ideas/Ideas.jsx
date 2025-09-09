@@ -32,7 +32,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "../ui/dialog";
 import { Loader2 } from "lucide-react";
 import { Input } from "../ui/input";
-import AIanimation2 from "../../assets/AIanimation.gif";
+import AIanimation2 from "../../assets/AIAnimation.gif";
 import partyPopper from "../../assets/PartyPopper.png";
 import ProPlanModal from "../Comman/ProPlanModal";
 
