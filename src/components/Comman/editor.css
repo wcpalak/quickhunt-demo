@@ -1,0 +1,374 @@
+.e-rte-code-mirror-enabled .rte-code-mirror {
+    display: block !important;
+    /* To show the custom source code view. */
+}
+
+.e-rte-code-mirror-enabled .e-rte-content {
+    display: none !important;
+    /* To hide the editor area when custom source code enabled. */
+}
+
+/** Mention template styles **/
+.editor-mention-item-template {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.editor-mention-item-template .em-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editor-mention-item-template .em-avatar {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    text-indent: 0px;
+    line-height: 13px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-mention-item-template .em-name {
+    color: rgb(16, 24, 40);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+
+.editor-mention-item-template .em-email {
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+#toolsRTE_rte-edit-view_options li {
+    padding: 10px;
+    height: 60px;
+}
+
+body[class*="-dark"] .em-name {
+    color: #fff !important;
+}
+
+/** custom source code styles **/
+body[class*="-dark"] .rte-code-mirror .cm-tag {
+    color: #00ff00;
+}
+
+body[class*="-dark"] .rte-code-mirror .cm-string {
+    color: blue;
+}
+
+body[class*="-dark"] .rte-code-mirror .cm-attribute {
+    color: #f00;
+}
+
+body[class*="-dark"] .rte-code-mirror .CodeMirror-gutters,
+body[class*="-dark"] .rte-code-mirror .CodeMirror {
+    background-color: transparent;
+    color: #fff;
+}
+
+.sb-header {
+    z-index: 100;
+}
+
+.sb-content.e-view.hide-header {
+    top: 0 !important;
+}
+
+.sb-header.e-view.hide-header {
+    display: none;
+}
+
+ol, ul, menu {
+    margin: 0;
+    padding: 0;
+}
+.e-richtexteditor .e-toolbar-wrapper.e-rte-tb-float{
+  display: none !important;
+}
+
+.e-rte-code-mirror-enabled .e-rte-content {
+    display: none !important;
+    /* To hide the editor area when custom source code enabled. */
+}
+
+.e-error {
+  border-color: red !important;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+.e-license-banner {
+  display: none !important;
+}
+
+
+div[class*="e-license"] {
+  display: none !important;
+}
+
+div[style*="position: fixed"][style*="z-index: 999999999"] {
+  display: none !important;
+}
+
+div[style*="Claim your FREE account"] {
+  display: none !important;
+}
+.e-license-popup {
+  display: none !important;
+}
+
+.e-rte-image, .e-rte-audio, .e-rte-video {
+    border: 0;
+    cursor: pointer;
+    display: block;
+    float: none;
+    max-width: 100%;
+    position: relative;
+}
+.e-rte-image.e-imginline, .e-rte-audio.e-audio-inline, .e-rte-video.e-video-inline {
+ 
+  display: flex !important ;
+  float: none;
+  max-width: 100%;
+  padding: 1px;
+  vertical-align: bottom;
+  margin: 5px auto !important;
+}
+
+.e-richtexteditor .e-rte-container{
+  border: none !important;
+}
+
+
+div:contains("Claim your FREE account") {
+  display: none;
+}
+
+/* styles.css */
+.hide-fixed-overlay {
+  display: none !important;
+}
+
+#commonRTE_rte-edit-view ol {
+    list-style-type: decimal !important;
+    /*list-style-position: inside !important;*/
+}
+
+#commonRTE_rte-edit-view ul {
+    list-style-type: disc !important;
+    /*list-style-position: inside !important;*/
+}
+
+#commonRTE_rte-edit-view ul ,#commonRTE_rte-edit-view ol {
+    padding-left: 35px !important;
+    margin-left:0 !important;
+}
+
+#commonRTE_rte-edit-view ul li:not(:first-child) {
+    margin-top: 16px !important;
+}
+
+/* Ensure popup is on top */
+.e-rte-quick-popup {
+  z-index: 9999 !important;
+}
+
+/* Make sure parent allows overflow */
+.editor-wrapper, .e-richtexteditor, .e-rte-content, .e-rte {
+  overflow: visible !important;
+  position: relative;
+  /* height: 100px !important; */
+}
+.modal-wrapper, .popover-wrapper {
+  overflow: visible !important;
+  position: relative;
+  z-index: 9990; /* must be < 9999 for popup */
+}
+.e-rte-quick-popup .e-rte-tip-pointer.e-rte-tip-bottom::before {
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    border-top: none !important;
+    border-bottom: none !important;
+
+}
+.e-rte-quick-popup .e-rte-tip-pointer.e-rte-tip-top::before {
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+ border-bottom: none !important;
+}
+.e-richtexteditor .e-rte-placeholder {
+    color: #212529;
+    line-height: 1.5;
+    opacity: .54;
+    /* overflow: hidden; */
+    position: absolute;
+    text-align: start;
+    top: 10px;
+    padding: 25px !important;
+    z-index: 1;
+    display: none;
+}
+.e-richtexteditor .e-rte-content, .e-richtexteditor .e-source-content {
+    background: #fff;
+    color: #212529;
+}
+ 
+#commonRTE_rtelink {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  left: 50% !important;
+}
+
+@media (min-width: 768px) {
+  #commonRTE_rtelink {
+      position: fixed !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+    left: 65% !important; 
+  }
+}
+#commonRTE_tabledialog {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  left: 50% !important;
+}
+
+@media (min-width: 768px) {
+  #commonRTE_tabledialog {
+      position: fixed !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+    left: 65% !important; 
+  }
+}
+/* Force the Syncfusion link dialog to be fixed position and centered */
+.e-rte-link-dialog.e-popup {
+  position: fixed !important;
+  top: 20% !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  z-index: 10000;
+}
+
+#commonRTE .e-rte-table.e-dashed-border td,
+#commonRTE .e-rte-table.e-dashed-border th {
+  border: 1px dashed #dee2e6 !important;
+}
+#commonRTE .e-rte-table td, #commonRTE .e-rte-table th {
+  border: 1px solid #dee2e6 !important;
+}
+.e-richtexteditor .e-rte-content .e-content table td.e-cell-select, .e-richtexteditor .e-rte-content .e-content table th.e-cell-select, .e-rte-elements .e-rte-content .e-content table td.e-cell-select, .e-rte-elements .e-rte-content .e-content table th.e-cell-select {
+  border: 1px double #0d6efd !important;
+  height: inherit;
+}
+.e-rte-table td, .e-rte-table th {
+  border: 1px solid #dee2e6 !important;
+  height: 20px;
+  min-width: 20px;
+  padding: 2px 5px;
+  box-sizing: border-box;
+}
+/* .e-content table, */
+.e-content table:not(.e-rte-table) th,
+.e-content table:not(.e-rte-table) td {
+  border: 1px solid #000 !important;
+}
+
+.e-richtexteditor .e-rte-content .e-content p, .e-richtexteditor .e-source-content .e-content p, .e-richtexteditor .e-rte-iframe-content .e-content p {
+    /* margin: 0 0 50px !important; */
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+/* .e-richtexteditor .e-rte-content .e-content p, .e-richtexteditor .e-source-content .e-content p, .e-richtexteditor .e-rte-iframe-content .e-content p {
+  font-size: 16px !important;
+} */
+
+.e-richtexteditor .e-rte-content .e-content p,
+.e-richtexteditor .e-source-content .e-content p,
+.e-richtexteditor .e-rte-iframe-content .e-content p,
+.e-richtexteditor .e-rte-content .e-content li,
+.e-richtexteditor .e-source-content .e-content li,
+.e-richtexteditor .e-rte-iframe-content .e-content li,
+/* .e-richtexteditor .e-rte-content .e-content span, */
+.e-richtexteditor .e-source-content .e-content span,
+.e-richtexteditor .e-rte-iframe-content .e-content span {
+  font-size: 16px !important;
+}
+
+#commonRTE_rte-edit-view, .e-rte-container { 
+    border: 0;
+    overflow: auto;
+    /* overflow-x: hidden; */
+    outline: none;
+}
+
+.e-richtexteditor .e-rte-content .e-content, .e-richtexteditor .e-source-content .e-content, .e-richtexteditor .e-rte-iframe-content .e-content {
+    width: 100%;
+    display: block;
+    float: left;
+    background: unset;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 200px !important;
+    outline: 0 solid rgba(0, 0, 0, 0);
+    padding: 25px !important;
+    position: relative;
+    text-align: inherit;
+    z-index: 2;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 1em;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    transition: 100ms ease-out;
+}
+.e-richtexteditor .e-rte-content .e-content table, .e-richtexteditor .e-source-content .e-content table, .e-richtexteditor .e-rte-iframe-content .e-content table {
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+  -collapse: collapse;
+  empty-cells: show;
+}
+
+.checklist .e-richtexteditor .e-rte-content .e-content,.checklist .e-richtexteditor .e-source-content .e-content,.checklist .e-richtexteditor .e-rte-iframe-content .e-content {
+    min-height: auto !important;
+    padding-inline: 0 !important;
+}
+
+.checklist .e-richtexteditor .e-rte-placeholder{
+    padding-inline: 0 !important;
+}
+
+#commonRTE #commonRTErte-view .e-content h1{
+  font-size: 27px !important;
+
+}
+#commonRTE #commonRTErte-view .e-content h2{
+  font-size: 24px !important;
+
+}
+#commonRTE #commonRTErte-view .e-content h3{
+  font-size: 22px !important;
+
+}
+#commonRTE #commonRTErte-view .e-content h4{
+  font-size: 20px !important;
+}
+
+/* .e-rte-content .e-content.e-mention.e-lib.e-keyboard {cursor: pointer}
+.e-rte-content .e-content.e-mention.e-lib.e-keyboard p {cursor: auto} */

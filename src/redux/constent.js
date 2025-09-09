@@ -1,0 +1,6 @@
+export const SET_PROJECT_DETAILS = 'SET_PROJECT_DETAILS';
+export const SET_USER_DETAILS = 'SET_USER_DETAILS';
+export const SET_All_STATUS_TYPE = 'SET_All_STATUS_TYPE';
+export const SET_All_PROJECT = 'SET_All_PROJECT';
+export const SET_MARK_AS_READ = 'SET_MARK_AS_READ';
+export const SET_TRACK_ACTIVITY = 'SET_TRACK_ACTIVITY';

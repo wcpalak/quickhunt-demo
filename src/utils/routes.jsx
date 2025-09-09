@@ -1,0 +1,63 @@
+import {baseUrl} from "./constent";
+import {Dashboard} from "../components/Dashboard/Dashboard";
+import Announcements from "../components/Announcements/Announcements";
+import Ideas from "../components/Ideas/Ideas";
+import Roadmap from "../components/Roadmap/Roadmap";
+import Users from "../components/User/Users";
+import Widgets from "../components/Widgets/Widgets";
+import Notification from "../components/Notification/Notification";
+import Settings from "../components/Settings/Settings";
+import PricingPlans from "../components/PricingPlan/PricingPlans";
+import InAppMessage from "../components/InAppMessage/InAppMessage";
+import UpdateWidget from "../components/Widgets/UpdateWidget";
+import UpdateInAppMessage from "../components/InAppMessage/UpdateInAppMessage";
+import ImportExport from "../components/Settings/SettingPage/ImportExport/ImportExport";
+import ImportIdea from "../components/Settings/SettingPage/ImportExport/ImportIdea";
+import MessageTypes from "../components/InAppMessage/MessageTypes";
+import WidgetsTypes from "../components/Widgets/WidgetsTypes";
+import Articles from "../components/HelpCenter/Articles/Articles";
+import Category from "../components/HelpCenter/Category/Category";
+import ArticleDetail from "../components/HelpCenter/Articles/ArticleDetail";
+import Comments from "../components/Dashboard/Comments";
+import Reactions from "../components/Dashboard/Reactions";
+import UpdateIdea from "../components/Ideas/UpdateIdea";
+import UpdateAnnouncement from "../components/Announcements/UpdateAnnouncement";
+import InAppMessageAnalyticsView from "../components/InAppMessage/InAppMessageAnalyticsView";
+import Inbox from "../components/Inbox/Inbox";
+import AnalyticsViews from "../components/Announcements/AnalyticsViews";
+import Integrations from "../components/Integrations/Integrations";
+import WidgetAnalytics from "../components/Widgets/WidgetAnalytics";
+import ArticleAnalyticsViews from "../components/HelpCenter/Articles/ArticleAnalyticsViews";
+
+export const routes = [
+     {path: `${baseUrl}/dashboard`, component: <Dashboard/>},
+     {path: `${baseUrl}/dashboard/comments`, component: <Comments/>},
+     {path: `${baseUrl}/dashboard/reactions`, component: <Reactions/>},
+     {path: `${baseUrl}/changelog`, component: <Announcements/>},
+     {path: `${baseUrl}/changelog/:id`, component: <UpdateAnnouncement/>},
+     {path: `${baseUrl}/changelog/analytic-view`, component: <AnalyticsViews/>},
+     {path: `${baseUrl}/inbox`, component: <Inbox/>},
+     {path: `${baseUrl}/feedback`, component: <Ideas/>},
+     {path: `${baseUrl}/feedback/:id`, component: <UpdateIdea/>},
+     {path: `${baseUrl}/roadmap`, component: <Roadmap/>},
+     {path: `${baseUrl}/user`, component: <Users/>},
+     {path: `${baseUrl}/widget`, component: <Widgets/>},
+     {path: `${baseUrl}/widget/type`, component: <WidgetsTypes/>},
+     {path: `${baseUrl}/widget/:type/:id`, component: <UpdateWidget/>},
+     {path: `${baseUrl}/widget/analytic-view/:id`, component: <WidgetAnalytics/>},
+     {path: `${baseUrl}/help/article`, component: <Articles/>},
+     {path: `${baseUrl}/help/article/:id`, component: <ArticleDetail/>},
+     {path: `${baseUrl}/help/article/analytic-view/:id`, component: <ArticleAnalyticsViews/>},
+     {path: `${baseUrl}/help/category`, component: <Category/>},
+     {path: `${baseUrl}/notification`, component: <Notification/>},
+     {path: `${baseUrl}/pricing`, component: <PricingPlans/>},
+     {path: `${baseUrl}/settings/:type`, component: <Settings/>},
+     {path: `${baseUrl}/app-message`, component: <InAppMessage/>},
+     {path: `${baseUrl}/app-message/type`, component: <MessageTypes/>},
+     {path: `${baseUrl}/app-message/:type/:id`, component: <UpdateInAppMessage/>},
+     {path: `${baseUrl}/app-message/:type/analytic/:id`, component: <InAppMessageAnalyticsView/>},
+     {path: `${baseUrl}/import-export`, component: <ImportExport/>},
+     {path: `${baseUrl}/settings/import-export/import`, component: <ImportIdea/>},
+     {path: `${baseUrl}/integrations/`, component: <Integrations/>},
+     {path: `${baseUrl}/integrations/:integrationType`, component: <Integrations/>},
+]
