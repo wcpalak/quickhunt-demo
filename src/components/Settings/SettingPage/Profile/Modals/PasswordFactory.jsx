@@ -1,5 +1,4 @@
 import React, { Fragment, useCallback, useState } from 'react';
-import { apiService } from "@/Utils/Constent";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog.jsx";
 import { Label } from "@/components/ui/label.jsx";
 import { Input } from "@/components/ui/input.jsx";
@@ -8,6 +7,7 @@ import { Eye, EyeOff, Loader2 } from "lucide-react";
 import { toast } from "../../../../ui/use-toast";
 import partyPopper from "../../../../../assets/PartyPopper.png";
 import unlocked from "../../../../../assets/Unlocked.png";
+import { apiService } from '../../../../../utils/constent';
 
 const initialStatePass = {
     currentPassword: "",
